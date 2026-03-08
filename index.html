@@ -1,190 +1,182 @@
 <!DOCTYPE html>
-<html lang="Pt-br">
-
+<html lang="pt">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/index.css">
-    <title>AboutMe.</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LumekaTech</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkR4j8NB7p2QzE9RWxPbz5T9jpJ1rssZCvXg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="page-bg">
+    <div class="app">
+      <header class="topbar">
+        <div class="brand">
+          <div class="logo">
+            <div class="logo-inner"></div>
+          </div>
+          <h1>Lumeka<span>Tech</span></h1>
+        </div>
 
-    <header>
+        <div class="search-box">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="Pesquise por tópicos..." />
+        </div>
 
-        <nav>
-            <h1>About.Me</h1>
-            <ul>
-                <li>HOME</li>
-                <li>ABOUT</li>
-                <li>SERVICE</li>
-                <li>PORTFOLIO</li>
-                <li>RESUME</li>
-                <li>BLOG</li>
-                <li>CONTACT</li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="inicio">
-            <article class="Direita">
-                <p id="yello">HELLO, WELCOME</p>
-                <h1 id="cent">I'm Anderson Coper</h1>
-                <p id="cent">There are many variations of possages of Lorem Impsolom<br>
-                    Avaliable, but the majority haversuffered alteration in som<br>
-                    form, by injected humour,</p>
-                <input type="button" Value="Contact US">
-            </article>
+        <button class="add-btn" aria-label="Adicionar">
+          <i class="fa-solid fa-plus"></i>
+        </button>
 
-            <article class="esquerda">
-                <img src="img/banner.png" alt="homem em pé">
-            </article>
-        </section>
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </header>
 
-        <section id="I">
+      <div class="layout">
+        <aside class="sidebar" id="sidebar">
+          <nav class="sidebar-nav">
+            <a href="#" class="nav-item active">
+              <i class="fa-solid fa-house"></i>
+              <span>Comunidade Geral</span>
+            </a>
 
-            <div class="Div">
-                <div class="homem">
-                    <img src="img/abaout.png" alt="">
-                </div>
-                <div class="model">
-                    <img src="img/back-rect.png" alt="">
-                </div>
+            <a href="#" class="nav-item">
+              <i class="fa-regular fa-folder"></i>
+              <span>Projetos</span>
+            </a>
 
+            <a href="#" class="nav-item">
+              <i class="fa-regular fa-id-badge"></i>
+              <span>Meu Perfil</span>
+            </a>
+
+            <a href="#" class="nav-item">
+              <i class="fa-regular fa-user"></i>
+              <span>Meu Perfil</span>
+            </a>
+
+            <a href="#" class="nav-item">
+              <i class="fa-regular fa-bookmark"></i>
+              <span>Minhas Aulas</span>
+            </a>
+          </nav>
+
+          <div class="sidebar-community">
+            <div class="community-title">
+              <i class="fa-solid fa-puzzle-piece"></i>
+              <span>Comunidade Nicho:</span>
+            </div>
+            <strong>Finanças</strong>
+          </div>
+        </aside>
+
+        <main class="main-content">
+          <section class="hero-card card">
+            <div>
+              <h2>Bem-vindo, João!</h2>
+              <p>Nicho: Finanças</p>
             </div>
 
-            <div class="div2">
-                <h1 id="cent">About Me</h1>
-                <p id="cent">There are many variations of possages of Lorem Impsolom
-                    Avaliable, but the majority haversuffered alteration in som<br><br>
-                    Avaliable, but the majority haversuffered alteration in som
-                    form, by injected humour,</p>
-                <input type="button" Value="Contact US">
+            <div class="progress-row">
+              <div class="progress-bar">
+                <span style="width: 60%;"></span>
+              </div>
+              <strong>60%</strong>
             </div>
-        </section>
+          </section>
 
-        <section>
+          <section class="cards-grid">
+            <article class="post-card card">
+              <div class="post-image">
+                <img
+                  src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=900&q=80"
+                  alt="Monetize seu App em Angola"
+                />
+              </div>
 
-        </section>
-        <section class="service">
-            <h1>My Service</h1>
-            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
-                in some form,
-                by injected humour, or randomised words which don't look even slightly believable.</p>
+              <div class="post-body">
+                <h3>Monetize seu App em</h3>
+                <p class="subtitle">Angola</p>
 
-            <div class="box">
-                <div class="boxx">
+                <div class="post-meta">
+                  <div class="author">
+                    <img
+                      src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80"
+                      alt="Pedro K."
+                    />
+                    <span>Autor: Pedro K.</span>
+                  </div>
 
-                    <img src="img/Frame.png" alt="Service 1">
-                    <h3>Digital Marketing</h3><br>
-                    <p>Here are some of my recent projects and works</p>
-
+                  <div class="meta-actions">
+                    <span><i class="fa-solid fa-circle-check"></i> Comentar</span>
+                    <span><i class="fa-solid fa-comment-dots"></i> (35)</span>
+                  </div>
                 </div>
-
-                <div class="boxx">
-
-                    <img src="img/Vector.png" alt="Service 2">
-                    <h3>Digital Marketing</h3><br>
-                    <p>Here are some of my recent projects and works</p>
-
-                </div>
-
-                <div class="boxx">
-                    <img src="img/Vector (1).png" alt="Service 3">
-                    <h3>Digital Marketing</h3><br>
-                    <p>Here are some of my recent projects and works</p>
-                </div>
-            </div>
-
-        </section>
-
-        <section class="portfolioo">
-            <h1>My Portfolio</h1>
-            <p>Here are some of my recent projects and works. Availbable,<br>but
-                the majority havesuffered<br>alteration in some
-                form, by injected humor.
-            </p>
-            <article class="portfolio">
-
-                <div class="lado">
-                    <img src="img/portifolio1.png" alt="Project 1">
-                </div>
-
-                <div class="quatro">
-                    <img src="img/portifolio2.png" alt="Project 2">
-                    <img src="img/portifolio3.png" alt="Project 2">
-                    <img src="img/portifolio4.png" alt="Project 2">
-                    <img src="img/portifolio5.png" alt="Project 2">
-                </div>
+              </div>
             </article>
 
-        </section>
+            <article class="community-card card">
+              <div>
+                <h3>Solução Desemprergo Luanda</h3>
 
-        <section class="experiencia">
-            <h1>My Experience</h1>
-            <P>Here is a summary of my professional experience and skills.</P>
-            <article>
-                <div>
-                    <p>June-2002 -2020</p>
-                    <h1>UX/UI Designer</h1>
-                    <small>Figma</small>
-                    <p>There are many variation of<br>some of my recent blog postsdfasdfasdfqwef
-                        sfasfefewqfe
-                    </p>
-                </div>
-                <div>
-                    <p>June-2002 -2020</p>
-                    <h1>Product designer</h1>
-                    <small>Adobe photoshop</small>
-                    <p>There are many variation of<br>some of my recent blog postsdfasdfasdfqwef
-                        sfasfefewqfe
-                    </p>
-                </div>
-                <div>
-                    <p>June-2002 -2020</p>
-                    <h1>Graphic Designer</h1>
-                    <small>Adobe photoshop</small>
-                    <p>There are many variation of<br>some of my recent blog postsdfasdfasdfqwef
-                        sfasfefewqfe
-                    </p>
+                <div class="progress-bar green">
+                  <span style="width: 62%;"></span>
                 </div>
 
+                <div class="members">
+                  <img
+                    src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200&q=80"
+                    alt="Membro 1"
+                  />
+                  <img
+                    src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=200&q=80"
+                    alt="Membro 2"
+                  />
+                  <img
+                    src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=200&q=80"
+                    alt="Membro 3"
+                  />
+                </div>
+              </div>
+
+              <button class="join-btn">Join</button>
             </article>
+          </section>
 
-        </section>
+          <div class="load-more">
+            <button id="loadMoreBtn">Carregar mais...</button>
+          </div>
+        </main>
+      </div>
 
-        <section>
-            <div class="contact">
-                <h1>Contact Me</h1>
-                <p>Here are some of mewerwy recent blog posts and articles.</p>
-            </div>
+      <footer class="footer">
+        <div class="footer-progress">
+          <div class="mini-chart">
+            <span>60%</span>
+          </div>
+          <p>Progresso Aulas: 60%</p>
+        </div>
 
-            <article class="contactme">
-                <div class="location">
-                    <h4>Address_</h4>
-                    <p>23 s 80 Road, Benedict,ne, 68316</p>
-                    <h4>Phone_</h4>
-                    <p>+244 934928530</p>
-                    <h4>Email</h4>
-                    <p>czcz5691@gmail.xvz</p>
-                    <h4>Website</h4>
-                    <p>Cazomba.com</p>
-                </div>
-                <div class="colum">
-                    <input type="text" name="" id="" value="Nome">
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
-                    <button type="submit">Enviar SMS</button>
-                </div>
-            </article>
-        </section>
+        <a href="#" class="support-link">Suporte</a>
+      </footer>
+    </div>
+  </div>
 
-    </main>
-
-    <footer>
-        <h1>AboutMe.</h1>
-        <p>There are many variations of passages Oflorem Ipsumavaliable, but the majority<br>
-            havesuffered alteration in some from</p>
-
-    </footer>
+  <script src="script.js"></script>
 </body>
-
 </html>
