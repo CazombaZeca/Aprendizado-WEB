@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Minhas Aulas - LumekaTech</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <link rel="stylesheet" href="style/aulas.css" />
+</head>
+<body>
+  <div class="page-bg">
+    <div class="app-shell">
+      <header class="topbar">
+        <div class="topbar-left">
+          <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+
+          <div class="brand">
+            <div class="brand-logo">
+              <i class="fa-solid fa-user-astronaut"></i>
+            </div>
+            <h1>Lumeka<span>Tech</span></h1>
+          </div>
+        </div>
+
+        <div class="search-box">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="Pesique por tópicos..." />
+        </div>
+
+        <button class="add-btn" aria-label="Adicionar">
+          <i class="fa-solid fa-plus"></i>
+        </button>
+      </header>
+
+      <div class="dashboard-layout">
+        <aside class="sidebar" id="sidebar">
+          <div class="sidebar-inner">
+            <nav class="sidebar-nav">
+              <a href="comunidade.html" class="nav-item">
+                <i class="fa-regular fa-bell"></i>
+                <span>Comuniade Geral</span>
+              </a>
+
+              <a href="aulas.html" class="nav-item active">
+                <i class="fa-regular fa-user"></i>
+                <span>Minhas Aulas</span>
+              </a>
+
+              <a href="index.html" class="nav-item active">
+                <i class="fa-regular fa-user"></i>
+                <span>Inicío</span>
+              </a>
+
+
+              <a href="projetos.html" class="nav-item">
+                <i class="fa-solid fa-wrench"></i>
+                <span>Projetos</span>
+              </a>
+
+              <a href="meu-perfil.html" class="nav-item">
+                <i class="fa-solid fa-house"></i>
+                <span>Meu Perfil</span>
+              </a>
+
+              <a href="logout.html" class="nav-item">
+                <i class="fa-solid fa-globe"></i>
+                <span>Logout</span>
+              </a>
+            </nav>
+
+            <div class="sidebar-community">
+              <div class="community-line">
+                <i class="fa-regular fa-camera"></i>
+                <span>Comuniidde Nicho:</span>
+              </div>
+              <strong>Financias</strong>
+            </div>
+          </div>
+        </aside>
+
+        <main class="main-content">
+          <section class="course-card primary-card fade-in">
+            <div class="course-main">
+              <div class="course-info">
+                <h2 id="featuredCourseTitle">Marketing Básico</h2>
+
+                <div class="progress-track">
+                  <span id="featuredCourseProgress"></span>
+                </div>
+
+                <div class="course-bottom">
+                  <strong id="featuredCoursePercent">80%</strong>
+
+                  <button class="primary-btn" id="resumeBtn">
+                    Retomar Aula
+                  </button>
+                </div>
+              </div>
+
+              <div class="video-preview">
+                <img
+                  src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=900&q=80"
+                  alt="Pré-visualização da aula"
+                />
+                <button class="play-btn" id="playBtn" aria-label="Reproduzir vídeo">
+                  <i class="fa-solid fa-play"></i>
+                </button>
+              </div>
+            </div>
+          </section>
+
+          <section class="course-card secondary-card fade-in delay-1">
+            <h2 id="secondaryCourseTitle">Programação Avancáda</h2>
+
+            <div class="progress-track large">
+              <span id="secondaryCourseProgress"></span>
+            </div>
+
+            <div class="secondary-bottom">
+              <strong id="secondaryCoursePercent">20%</strong>
+
+              <div class="course-icons">
+                <button class="icon-action" id="certificateBtn" aria-label="Certificados">
+                  <i class="fa-regular fa-shield"></i>
+                </button>
+
+                <button class="icon-action" id="commentsBtn" aria-label="Comentários">
+                  <i class="fa-regular fa-comments"></i>
+                </button>
+              </div>
+            </div>
+          </section>
+
+          <section class="certificates-card fade-in delay-2">
+            <h3 id="certificateTitle">Certificados: 2 Conclludós</h3>
+
+            <div class="certificates-list" id="certificatesList">
+              <div class="certificate-badge blue">
+                <i class="fa-solid fa-award"></i>
+              </div>
+
+              <div class="certificate-badge orange">
+                <i class="fa-solid fa-medal"></i>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+
+      <footer class="app-footer">
+        <div class="footer-progress">
+          <div class="mini-progress-circle">
+            <span id="footerMiniPercent">60%</span>
+          </div>
+          <p>Progresso Aulas: <strong id="footerProgressText">60%</strong></p>
+        </div>
+
+        <a href="#" class="support-link">Suporte</a>
+      </footer>
+    </div>
+  </div>
+
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+  <script src="js/aulas.js"></script>
+</body>
+</html>

@@ -1,182 +1,192 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>LumekaTech</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LumekaTech Dashboard</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
     rel="stylesheet"
-  >
+    />
 
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkR4j8NB7p2QzE9RWxPbz5T9jpJ1rssZCvXg=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <div class="page-bg">
-    <div class="app">
-      <header class="topbar">
-        <div class="brand">
-          <div class="logo">
-            <div class="logo-inner"></div>
-          </div>
-          <h1>Lumeka<span>Tech</span></h1>
-        </div>
+    <link rel="stylesheet" href="style/index.css" />
+  </head>
+  <body>
+    <div class="page-bg">
+      <div class="app-shell">
+        <header class="topbar">
+          <div class="topbar-left">
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+              <i class="fa-solid fa-bars"></i>
+            </button>
 
-        <div class="search-box">
-          <i class="fa-solid fa-magnifying-glass"></i>
-          <input type="text" placeholder="Pesquise por tópicos..." />
-        </div>
-
-        <button class="add-btn" aria-label="Adicionar">
-          <i class="fa-solid fa-plus"></i>
-        </button>
-
-        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
-          <i class="fa-solid fa-bars"></i>
-        </button>
-      </header>
-
-      <div class="layout">
-        <aside class="sidebar" id="sidebar">
-          <nav class="sidebar-nav">
-            <a href="#" class="nav-item active">
-              <i class="fa-solid fa-house"></i>
-              <span>Comunidade Geral</span>
-            </a>
-
-            <a href="#" class="nav-item">
-              <i class="fa-regular fa-folder"></i>
-              <span>Projetos</span>
-            </a>
-
-            <a href="#" class="nav-item">
-              <i class="fa-regular fa-id-badge"></i>
-              <span>Meu Perfil</span>
-            </a>
-
-            <a href="#" class="nav-item">
-              <i class="fa-regular fa-user"></i>
-              <span>Meu Perfil</span>
-            </a>
-
-            <a href="#" class="nav-item">
-              <i class="fa-regular fa-bookmark"></i>
-              <span>Minhas Aulas</span>
-            </a>
-          </nav>
-
-          <div class="sidebar-community">
-            <div class="community-title">
-              <i class="fa-solid fa-puzzle-piece"></i>
-              <span>Comunidade Nicho:</span>
-            </div>
-            <strong>Finanças</strong>
-          </div>
-        </aside>
-
-        <main class="main-content">
-          <section class="hero-card card">
-            <div>
-              <h2>Bem-vindo, João!</h2>
-              <p>Nicho: Finanças</p>
-            </div>
-
-            <div class="progress-row">
-              <div class="progress-bar">
-                <span style="width: 60%;"></span>
+            <div class="brand">
+              <div class="brand-logo">
+                <span class="logo-inner"></span>
               </div>
-              <strong>60%</strong>
+              <h1>Lumeka<span>Tech</span></h1>
             </div>
-          </section>
+          </div>
 
-          <section class="cards-grid">
-            <article class="post-card card">
-              <div class="post-image">
-                <img
-                  src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=900&q=80"
-                  alt="Monetize seu App em Angola"
-                />
+          <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Pesique por tópicos..." />
+          </div>
+
+          <button class="add-btn" aria-label="Adicionar">
+            <i class="fa-solid fa-plus"></i>
+          </button>
+        </header>
+
+        <div class="dashboard-layout">
+          <aside class="sidebar" id="sidebar">
+            <div class="sidebar-inner">
+              <nav class="sidebar-nav">
+                <a href="comunidade.html" class="nav-item active">
+                  <i class="fa-solid fa-house"></i>
+                  <span>Comunidade Geral</span>
+                </a>
+
+                <a href="projetos.html" class="nav-item">
+                  <i class="fa-regular fa-folder"></i>
+                  <span>Projetos</span>
+                </a>
+
+                <a href="perfil.html" class="nav-item">
+                  <i class="fa-regular fa-id-badge"></i>
+                  <span>Meu Perfil</span>
+                </a>
+
+                <a href="aulas.html" class="nav-item">
+                  <i class="fa-regular fa-bookmark"></i>
+                  <span>Minhas Aulas</span>
+                </a>
+              </nav>
+
+              <div class="sidebar-footer-card">
+                <div class="sidebar-footer-title">
+                  <i class="fa-solid fa-puzzle-piece"></i>
+                  <span>Comuiidade Nicho:</span>
+                </div>
+                <strong>Finanças</strong>
+              </div>
+            </div>
+          </aside>
+
+          <main class="main-content">
+            <section class="welcome-card card fade-in">
+              <div class="welcome-info">
+                <h2 id="welcomeName">Bem-vindo, João!</h2>
+                <p id="welcomeNiche">Nicho: Finanças</p>
               </div>
 
-              <div class="post-body">
-                <h3>Monetize seu App em</h3>
-                <p class="subtitle">Angola</p>
+              <div class="progress-row">
+                <div class="progress-bar">
+                  <span id="mainProgressBar"></span>
+                </div>
+                <strong id="mainProgressValue">60%</strong>
+              </div>
+            </section>
 
-                <div class="post-meta">
-                  <div class="author">
+            <section class="content-grid">
+              <article class="post-card card fade-in delay-1">
+                <div class="post-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=1200&q=80"
+                    alt="Monetize seu App em Angola"
+                  />
+                </div>
+
+                <div class="post-content">
+                  <h3 id="postTitle">Monetize seu App em</h3>
+                  <p class="post-location" id="postLocation">Angola</p>
+
+                  <div class="post-meta">
+                    <div class="post-author">
+                      <img
+                        src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=240&q=80"
+                        alt="Autor"
+                      />
+                      <span id="postAuthor">Autor: Pedro K.</span>
+                    </div>
+
+                    <div class="post-actions">
+                      <span>
+                        <i class="fa-solid fa-circle-check"></i>
+                        Comentar
+                      </span>
+                      <span>
+                        <i class="fa-solid fa-comment-dots"></i>
+                        <span id="commentCount">(35)</span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="community-card card fade-in delay-2">
+                <div class="community-card-top">
+                  <h3 id="projectTitle">Solução Desemprergo Luanda</h3>
+
+                  <div class="progress-bar green">
+                    <span id="projectProgressBar"></span>
+                  </div>
+
+                  <div class="community-members">
                     <img
-                      src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80"
-                      alt="Pedro K."
+                      src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=300&q=80"
+                      alt="Membro 1"
                     />
-                    <span>Autor: Pedro K.</span>
+                    <img
+                      src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=300&q=80"
+                      alt="Membro 2"
+                    />
+                    <img
+                      src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=300&q=80"
+                      alt="Membro 3"
+                    />
                   </div>
-
-                  <div class="meta-actions">
-                    <span><i class="fa-solid fa-circle-check"></i> Comentar</span>
-                    <span><i class="fa-solid fa-comment-dots"></i> (35)</span>
-                  </div>
-                </div>
-              </div>
-            </article>
-
-            <article class="community-card card">
-              <div>
-                <h3>Solução Desemprergo Luanda</h3>
-
-                <div class="progress-bar green">
-                  <span style="width: 62%;"></span>
                 </div>
 
-                <div class="members">
-                  <img
-                    src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200&q=80"
-                    alt="Membro 1"
-                  />
-                  <img
-                    src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=200&q=80"
-                    alt="Membro 2"
-                  />
-                  <img
-                    src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=200&q=80"
-                    alt="Membro 3"
-                  />
-                </div>
-              </div>
+                <button class="join-btn" id="joinBtn">Join</button>
+              </article>
+            </section>
 
-              <button class="join-btn">Join</button>
-            </article>
-          </section>
-
-          <div class="load-more">
-            <button id="loadMoreBtn">Carregar mais...</button>
-          </div>
-        </main>
-      </div>
-
-      <footer class="footer">
-        <div class="footer-progress">
-          <div class="mini-chart">
-            <span>60%</span>
-          </div>
-          <p>Progresso Aulas: 60%</p>
+            <section class="load-more-section fade-in delay-3">
+              <button id="loadMoreBtn" class="load-more-btn">
+                Carrgar mais...
+              </button>
+            </section>
+          </main>
         </div>
 
-        <a href="#" class="support-link">Suporte</a>
-      </footer>
-    </div>
-  </div>
+        <footer class="app-footer">
+          <div class="footer-progress">
+            <div class="mini-progress-circle">
+              <span id="footerProgressText">60%</span>
+            </div>
+            <p>
+              Progresso Aulas: <strong id="footerProgressStrong">60%</strong>
+            </p>
+          </div>
 
-  <script src="script.js"></script>
-</body>
+          <a href="#" class="support-link">Suporte</a>
+        </footer>
+      </div>
+    </div>
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <script src="js/index.js"></script>
+  </body>
 </html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Comunidade Geral - LumekaTech</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <link rel="stylesheet" href="style/comunidade.css" />
+</head>
+<body>
+  <div class="page-bg">
+    <div class="app-shell">
+      <header class="topbar">
+        <div class="topbar-left">
+          <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+
+          <div class="brand">
+            <div class="brand-logo">
+              <span class="logo-inner"></span>
+            </div>
+            <h1>Lumeka<span>Tech</span></h1>
+          </div>
+        </div>
+
+        <div class="search-box">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="Pesique por tópicos..." />
+        </div>
+
+        <button class="add-btn" aria-label="Adicionar">
+          <i class="fa-solid fa-plus"></i>
+        </button>
+      </header>
+
+      <div class="dashboard-layout">
+        <aside class="sidebar" id="sidebar">
+          <div class="sidebar-inner">
+            <div>
+              <div class="sidebar-title">Naviganfeed</div>
+
+              <nav class="sidebar-nav">
+                <a href="comunidade.html" class="nav-item">
+                  <i class="fa-solid fa-link"></i>
+                  <span>Comunidade Geral</span>
+                </a>
+
+                <a href="#" class="nav-item active">
+                  <i class="fa-solid fa-link"></i>
+                  <span>Comunidade Nicho: Finanças</span>
+                </a>
+
+                <a href="projetos.html" class="nav-item">
+                  <i class="fa-regular fa-square-plus"></i>
+                  <span>Projetos</span>
+                </a>
+
+                <a href="meu-perfil.html" class="nav-item">
+                  <i class="fa-regular fa-pen-to-square"></i>
+                  <span>Meu Perfil</span>
+                </a>
+
+                <a href="aulas.html" class="nav-item">
+                  <i class="fa-regular fa-bookmark"></i>
+                  <span>Minhas Aulas</span>
+                </a>
+
+                <a href="logout.html" class="nav-item logout">
+                  <i class="fa-regular fa-square-minus"></i>
+                  <span>Logout</span>
+                </a>
+              </nav>
+            </div>
+
+            <div class="sidebar-bottom">
+              <p>Progresso Aulas: <strong id="sidebarProgressText">60%</strong></p>
+            </div>
+          </div>
+        </aside>
+
+        <main class="main-content">
+          <section class="community-panel fade-in">
+            <div class="community-hero">
+              <h2 id="communityTitle">Comunidade Finanças Angola</h2>
+            </div>
+
+            <div class="community-body">
+              <div class="topics-list" id="topicsList"></div>
+
+              <section class="hot-topics-section fade-in delay-2">
+                <div class="hot-topics-left">
+                  <button class="new-topic-btn" id="newTopicBtn" aria-label="Nova dúvida">
+                    <i class="fa-solid fa-plus"></i>
+                  </button>
+                  <button class="new-question-link" id="newQuestionText">+ Nova Dúvida</button>
+                </div>
+
+                <div class="hot-topics-content">
+                  <h3>Hot Topics</h3>
+                  <div class="tags" id="hotTags"></div>
+                </div>
+              </section>
+            </div>
+
+            <footer class="panel-footer">
+              <div class="footer-progress">
+                <div class="footer-progress-bar">
+                  <span id="footerBarFill"></span>
+                </div>
+                <strong id="footerProgressValue">60%</strong>
+              </div>
+
+              <a href="#" class="support-link">Suporte</a>
+            </footer>
+          </section>
+        </main>
+      </div>
+    </div>
+  </div>
+
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+  <script src="js/comunidade.js"></script>
+</body>
+</html>
